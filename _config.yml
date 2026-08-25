@@ -1,0 +1,26 @@
+# Site identity. These feed the page footer and the privacy policy.
+# Change them here, not in the individual pages.
+legal_name: "Muhana"
+business_id: "2642201-7"
+business_address: "Vahverokuja 9, 70910 Vuorela"
+support_email: "muhana@wate.dev"
+effective_date: "2026-08-25"
+
+title: Undelete for Jira
+description: Legal and support pages for the Undelete Atlassian Marketplace app.
+
+# Plain Jekyll with a local layout — no external theme, no plugins, so
+# GitHub Pages builds this without a Gemfile.
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md

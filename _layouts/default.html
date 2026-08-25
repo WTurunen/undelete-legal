@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — Undelete for Jira</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c2b41;
+    --muted: #5b6b82;
+    --rule: #dfe4ec;
+    --accent: #0b5cd5;
+    --code-bg: #f4f6fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161d;
+      --fg: #dde3ec;
+      --muted: #96a3b6;
+      --rule: #2a323e;
+      --accent: #6fa8ff;
+      --code-bg: #1b212b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+  nav {
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  nav a { color: var(--muted); text-decoration: none; margin-right: 1.25rem; }
+  nav a:hover, nav a.here { color: var(--accent); }
+  nav .brand { color: var(--fg); font-weight: 600; margin-right: 1.75rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 0.75rem; }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
+  a { color: var(--accent); }
+  code {
+    background: var(--code-bg);
+    padding: 0.12em 0.35em;
+    border-radius: 3px;
+    font-size: 0.88em;
+  }
+  pre { background: var(--code-bg); padding: 1rem; border-radius: 6px; overflow-x: auto; }
+  pre code { background: none; padding: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1.25rem 0; font-size: 0.92rem; display: block; overflow-x: auto; }
+  th, td { border: 1px solid var(--rule); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+  th { background: var(--code-bg); font-weight: 600; }
+  blockquote { border-left: 3px solid var(--rule); margin: 1.25rem 0; padding: 0 0 0 1rem; color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  footer { border-top: 1px solid var(--rule); margin-top: 4rem; padding-top: 1.25rem; color: var(--muted); font-size: 0.85rem; }
+  em { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="{{ '/' | relative_url }}">Undelete for Jira</a>
+    <a href="{{ '/docs' | relative_url }}">Documentation</a>
+    <a href="{{ '/limitations' | relative_url }}">Limitations</a>
+    <a href="{{ '/privacy' | relative_url }}">Privacy</a>
+  </nav>
+  {{ content }}
+  <footer>
+    {{ site.legal_name }} &middot; Business ID {{ site.business_id }} &middot; Finland<br>
+    Support: <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>
+  </footer>
+</div>
+</body>
+</html>
