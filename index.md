@@ -22,7 +22,7 @@ an external service.
 
 - **[Documentation](docs)** — how to restore an issue, what the app restores, settings,
   attachment capture, and the audit log.
-- **[Known limitations](limitations)** — what the app cannot do, stated plainly.
+- **[Known limitations](limitations)** — what the app cannot do.
 - **[Privacy policy](privacy)** — what the app stores, where it lives, how long it is
   kept, and who can reach it.
 

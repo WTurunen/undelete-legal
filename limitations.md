@@ -4,11 +4,6 @@ title: Known limitations
 
 # Known limitations
 
-Every recovery tool has edges. These are Undelete's, stated plainly, so that you can
-decide whether it fits before you rely on it rather than afterwards.
-
-**What restore can and can't do — the honest version**
-
 - **Restored issues get a new issue key.** Jira Cloud's API doesn't allow re-using keys.
   We label every restored issue and record the old→new mapping, and the restored issue
   carries an audit comment naming the original key.

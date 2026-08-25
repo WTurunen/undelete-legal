@@ -4,11 +4,6 @@ title: Documentation
 
 # Undelete — documentation
 
-*Written in ASD-STE100 Simplified Technical English, so that it reads clearly for
-non-native English speakers and translates cleanly.*
-
----
-
 ## 1. How to restore an issue
 
 1. Open Undelete from the Apps menu in Jira.
