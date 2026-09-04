@@ -35,7 +35,8 @@ If you set Attachment capture to on, the app also restores the attachment files.
 
 **Caution: A restored issue is a new issue. It is not the initial issue.**
 
-- **The issue key changes.** Jira Cloud cannot use the initial key again. The app puts
+- **The issue key changes.** When Jira deletes an issue, Jira Cloud cannot use that key
+  again. The app puts
   the label `restored-from-trash` on each restored issue, and it records the initial key
   with the new key. The app also adds a comment that gives the initial key.
 - **The status changes.** Jira does not permit an app to set the status when it makes an
@@ -67,15 +68,16 @@ file.
 Jira Cloud has no recovery for a file that a user deletes from an issue that stays.
 Atlassian has a public request for this, with the number JRACLOUD-81027.
 
-To keep the files themselves, set Attachment capture to on in the Settings page. The
-setting is off after you install the app. Until you set it to on, the app keeps only the
-data about each file, and not the file itself.
+Attachment capture is on after you install the app. The app keeps a copy of each file
+that a user deletes. If you set Attachment capture to off, the app keeps no copy of a
+file that a user deletes from an issue that stays. The Deleted files page does not show
+that file.
 
 Attachment capture has two limits:
 
 - The maximum size of one file is 10 MB. You can set a value from 1 MB to 50 MB.
-- The maximum quantity of data for one month is 200 MB. You can set a value from 0 MB to
-  5120 MB.
+- The maximum quantity of data for one month is 250 MB. You can change this value in the
+  Settings page. The Settings page gives the maximum value that you can set.
 
 If a file is above one of these two limits, the app keeps only the data about that file.
 The report gives the cause for each such file.
@@ -137,8 +139,10 @@ that, you cannot restore the issues that were on the Trash page.
 - The app cannot write the initial author on a comment. Each restored comment starts with
   the name of that author.
 - If that user is not active, or if the Modify Reporter permission is not there, the app
-  cannot set the reporter. The app records the initial reporter in the audit comment.
-- The app keeps no files until you set Attachment capture to on.
+  cannot set the reporter. The report gives the reporter field as dropped. The report
+  does not give the name of the initial reporter.
+- If the app reaches the monthly limit for attachment data, the app keeps no more files
+  until the next month.
 - **Keep the browser page open during a restore that contains files.** The files go to
   Jira from your browser. If you close the page, the new issue stays in Jira, but without
   its description, its comments and its links. To complete the operation, click Restore

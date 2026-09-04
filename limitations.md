@@ -20,14 +20,22 @@ title: Known limitations
 - **Restored issues start at the workflow's initial status.** Jira doesn't allow setting
   the status when an issue is created, so a "Done" issue comes back at its workflow's
   first status (e.g. "To Do"). Everything else about the issue restores normally.
-- **Attachment files come back when attachment capture is on.** Attachment capture ships
-  OFF — turn it on in Settings before you need it. When on, the app keeps a copy of each
-  attachment's file (per-file cap adjustable 1–50 MB, default 10 MB; monthly storage
-  budget adjustable up to 5120 MB, default 200 MB) and re-uploads the files on restore,
-  with inline image embeds in the description re-pointed at the restored files. Files
-  over the cap, over the monthly budget, or uploaded while capture was off restore as
-  metadata only — the restore report lists every affected file, and the CSV export
-  gives a per-file reason, so nothing is silently lost.
+- **Attachment files come back while attachment capture is on.** Capture is already on
+  when you install the app, so a fresh install is keeping copies from day one. You can
+  switch it off in Settings, or exclude individual projects from it. The app keeps a copy
+  of each attachment's file. Two separate limits apply. Each file has a size cap
+  (adjustable 1–50 MB, default 10 MB). Separately, capture has a monthly *write
+  allowance* (adjustable, default 250 MB) that resets on the 1st of each month, UTC. It
+  limits how much is captured each month, not how much is held at once: a captured copy
+  is kept for as long as its issue exists, and is deleted along with the issue's trash
+  record when retention expires (60 days by default). A file deleted from an issue that
+  still exists is kept for the grace window instead (14 days by default). The allowance
+  is charged on stored size, about a third larger than the file itself, so 250 MB of
+  allowance takes in roughly 187 MB of actual files. Captured files are re-uploaded on
+  restore, with inline image embeds in the description re-pointed at the restored files.
+  Files over the cap, over the allowance, or uploaded while capture was switched off
+  restore as metadata only — the restore report lists every affected file, and the CSV
+  export gives a per-file reason, so nothing is silently lost.
 - **A restore that carries attachment files runs from your browser tab — keep it open.**
   The files upload from the admin's browser in batches. If the tab closes mid-restore,
   the recreated issue exists but has no description, comments, or links yet — those land

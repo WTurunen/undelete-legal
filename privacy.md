@@ -46,15 +46,22 @@ All of the following is stored per-installation in Forge storage:
 | Issue snapshots | On issue create/update (debounced) | Restore-relevant fields only: summary, description, project/type/status ids, priority, labels, assignee and reporter account ids, parent, due date, created date, non-empty custom fields. Compressed. |
 | Comment mirror | On comment create/edit | Comment id, author account id and display name, created timestamp, body. Compressed. |
 | Trash records | On issue deletion | The snapshot, plus deleted-by account id and deleted-at timestamp. |
-| Attachment mirrors | On upload, **only while attachment capture is enabled — it ships OFF** | Filename, size, uploader account id, created date, media id, and the file bytes in chunks. Files over the per-file cap or past the monthly budget: metadata only, no bytes. |
+| Attachment mirrors | On upload, while attachment capture is enabled. **Capture is ON from installation.** | Filename, size, uploader account id, created date, media id, and the file bytes in chunks. Files over the per-file cap or past the monthly budget: metadata only, no bytes. |
 | Attachment usage counter | As files are mirrored | Per-month aggregate only: bytes stored, files mirrored, files skipped. No file content. |
 | Audit log | On restore/purge | Timestamp, acting administrator's account id, action, old and new issue keys. |
 | Settings | On save | Retention days, restorer role, excluded projects, notification toggle, attachment capture settings. |
 | Feedback bookkeeping | On first app open | A random install ID generated locally, when the app was first opened, and whether the feedback card was dismissed. No account ids, no issue data. |
 
+**Attachment capture is on from the moment you install the app.** The app copies each
+attachment as a user uploads it, so that a file deleted later can be put back. The volume
+is bounded by a per-file size cap (default 10 MB) and by a monthly write budget (default
+250 MB). A site administrator can switch capture off in Settings, or exclude individual
+projects from it.
+
 ## 4. What the app does not store
 
-- Attachment binaries while attachment capture is off — the shipped default.
+- Attachment binaries while an administrator has switched attachment capture off.
+  Capture is on by default, so this is a choice the administrator makes.
 - Worklogs, issue history, watchers, votes.
 - Anything from projects on the Settings exclusion list. Capture is skipped entirely
   for those projects.
