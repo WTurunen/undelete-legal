@@ -60,8 +60,9 @@ The app removes no data without a record.
   lost.
 - If the app cannot restore a file, the report gives the name of the file and the cause.
 
-The report is the same on each restore path. You can also download the report as a CSV
-file.
+The report is the same on each restore path. You can also download the part of the report
+about the files as a CSV file. The dropped fields and the lost links are on the screen
+only.
 
 ## 5. Deleted files
 
