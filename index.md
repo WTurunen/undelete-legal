@@ -2,7 +2,7 @@
 title: Undelete for Jira
 ---
 
-# Undelete — Restore Deleted Issues for Jira
+# Undelete - Restore Deleted Issues for Jira
 
 Jira Cloud has no recycle bin. When a user deletes an issue, Jira deletes that issue
 permanently, and no support request can bring it back.
@@ -25,6 +25,8 @@ an external service.
 - **[Known limitations](limitations)** — what the app cannot do.
 - **[Privacy policy](privacy)** — what the app stores, where it lives, how long it is
   kept, and who can reach it.
+- **[Security](security)** — how the app is built, how to report a vulnerability, and
+  what it deliberately does not do.
 
 ## Support
 

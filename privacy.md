@@ -7,7 +7,7 @@ title: Privacy policy
 **Effective date:** {{ site.effective_date }} &middot; **Last updated:** {{ site.effective_date }}
 
 {{ site.legal_name }} (business ID {{ site.business_id }}, {{ site.business_address }},
-Finland) — "we", "us" — publishes the Atlassian Marketplace app **Undelete — Restore
+Finland) — "we", "us" — publishes the Atlassian Marketplace app **Undelete - Restore
 Deleted Issues for Jira** ("the app").
 
 This policy explains what the app does with data. It covers the app only. It does not
