@@ -4,7 +4,7 @@ title: Privacy policy
 
 # Privacy Policy — Undelete for Jira
 
-**Effective date:** {{ site.effective_date }} &middot; **Last updated:** {{ site.effective_date }}
+**Effective date:** {{ site.effective_date }} &middot; **Last updated:** {{ site.privacy_updated }}
 
 {{ site.legal_name }} (business ID {{ site.business_id }}, {{ site.business_address }},
 Finland) — "we", "us" — publishes the Atlassian Marketplace app **Undelete - Restore
@@ -22,6 +22,10 @@ The app is installed by a Jira site administrator onto that organisation's own J
 site. The organisation is the **data controller** for the Jira content the app handles.
 We act as a **data processor** on the organisation's behalf, and only to provide the
 app's function: keeping restorable copies of deleted Jira issues.
+
+That processing is governed by our **[Data Processing Addendum](dpa)**, which is the
+contract required by Article 28 GDPR. It sets out what we process, the technical and
+organisational measures, our sub-processors, and how long the data is kept.
 
 ## 2. Where your data lives
 

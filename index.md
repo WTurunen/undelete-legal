@@ -27,6 +27,8 @@ an external service.
   kept, and who can reach it.
 - **[Security](security)** — how the app is built, how to report a vulnerability, and
   what it deliberately does not do.
+- **[Data Processing Addendum](dpa)** — the GDPR Article 28 contract for the personal
+  data the app processes on your behalf.
 
 ## Support
 

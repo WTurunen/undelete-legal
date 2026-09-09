@@ -5,6 +5,11 @@ business_id: "2642201-7"
 business_address: "Vahverokuja 9, 70910 Vuorela"
 support_email: "muhana@wate.dev"
 effective_date: "2026-08-25"
+# The DPA was published later than the other pages and carries its own date.
+dpa_effective_date: "2026-09-09"
+# The privacy policy's effective date does not move when the page is edited; its
+# "last updated" date does. Keep them separate.
+privacy_updated: "2026-09-09"
 
 title: Undelete for Jira
 description: Legal and support pages for the Undelete Atlassian Marketplace app.
