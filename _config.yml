@@ -1,9 +1,20 @@
-# Site identity. These feed the page footer and the privacy policy.
+# Site identity. These feed the page footer and the legal pages.
 # Change them here, not in the individual pages.
+#
+# THREE role-based addresses, not one. Atlassian's Marketplace review rejected
+# "muhana@wate.dev" on 2026-09-10 as an individual address and requires
+# role-based contacts on the company domain. (Muhana is in fact the registered
+# trading name, not a person, but complying costs less than being right.)
+#
+# They are aliases to one inbox. The split is about what each document SAYS:
+# a reader of the DPA and a reader of the privacy policy must find the same
+# data protection contact, and a security researcher expects security@.
 legal_name: "Muhana"
 business_id: "2642201-7"
 business_address: "Vahverokuja 9, 70910 Vuorela"
-support_email: "muhana@wate.dev"
+support_email: "support@wate.dev"    # general support: footer, landing page
+privacy_email: "privacy@wate.dev"    # data protection: privacy policy 12, DPA
+security_email: "security@wate.dev"  # vulnerability reports, security page
 effective_date: "2026-08-25"
 # The DPA was published later than the other pages and carries its own date.
 dpa_effective_date: "2026-09-09"

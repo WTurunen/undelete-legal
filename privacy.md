@@ -186,7 +186,7 @@ Atlassian, as required by the Atlassian Marketplace Partner Agreement.
 
 ## 12. Contact
 
-Email **[{{ site.support_email }}](mailto:{{ site.support_email }})** for any question
+Email **[{{ site.privacy_email }}](mailto:{{ site.privacy_email }})** for any question
 about this policy or about data the app holds.
 
 {{ site.legal_name }}

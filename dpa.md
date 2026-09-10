@@ -16,7 +16,7 @@ and is required by Article 28(3) of Regulation (EU) 2016/679 ("GDPR"). Terms def
 the GDPR have the same meaning here.
 
 Contact for all data protection matters:
-**[{{ site.support_email }}](mailto:{{ site.support_email }})**
+**[{{ site.privacy_email }}](mailto:{{ site.privacy_email }})**
 
 ---
 
@@ -144,7 +144,7 @@ Provider has not appointed a data protection officer. Provider's processing does
 the conditions in Article 37(1): Provider is not a public authority, does not carry out
 regular and systematic monitoring of data subjects on a large scale, and does not process
 special categories of data on a large scale. All data protection matters go to
-[{{ site.support_email }}](mailto:{{ site.support_email }}).
+[{{ site.privacy_email }}](mailto:{{ site.privacy_email }}).
 
 ## 12. General
 

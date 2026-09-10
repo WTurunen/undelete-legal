@@ -12,7 +12,7 @@ Atlassian's Runs on Atlassian programme.
 
 ## Reporting a vulnerability
 
-Email **{{ site.support_email }}** with "security" in the subject line. Please include
+Email **{{ site.security_email }}** with "security" in the subject line. Please include
 what you found, how to reproduce it, and what an attacker could do with it.
 
 Undelete is run by a single developer, so there is no 24/7 rota and no bug
