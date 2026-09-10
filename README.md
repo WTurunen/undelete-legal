@@ -12,13 +12,25 @@ source lives elsewhere and stays private.
 |---|---|
 | Privacy policy (mandatory) | `/privacy` |
 | Documentation | `/docs` |
-| Support | `mailto:` the address in `_config.yml` |
+| Support | `mailto:` the `support_email` in `_config.yml` |
 
 ## Editing
 
-Identity — legal name, business ID, address, support email, effective date — lives in
+Identity — legal name, business ID, address, contact addresses, effective date — lives in
 `_config.yml` and nowhere else. The pages read it as `{{ site.* }}`. Change it once,
 there.
+
+**There are three contact addresses, and which one a page uses is deliberate:**
+
+| Variable | Used by |
+|---|---|
+| `support_email` | the footer on every page, and the landing page |
+| `privacy_email` | `privacy.md` section 12, and both contacts in `dpa.md` |
+| `security_email` | the vulnerability-report line in `security.md` |
+
+They are aliases to one inbox, so the split is about what each document says rather than
+where mail lands. `privacy_email` is the one that matters: it keeps the DPA and the privacy
+policy naming the same data protection contact. Do not collapse them back into one.
 
 Page content is plain Markdown rendered by `_layouts/default.html`. No theme gem, no
 plugins, no Gemfile — GitHub Pages builds it as-is.
