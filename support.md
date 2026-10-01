@@ -14,8 +14,9 @@ For a security vulnerability, use
 ## Hours
 
 Monday to Friday, 9:00–17:00 Finnish time (Europe/Helsinki), except Finnish public
-holidays. These are the hours when we read and answer support requests. There is no
-agreed response time.
+holidays. These are the hours when we read and answer support requests.
+
+We aim to answer within 48 hours. Weekends and Finnish public holidays are not counted.
 
 ## What to include
 
