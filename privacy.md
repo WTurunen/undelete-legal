@@ -10,7 +10,8 @@ title: Privacy policy
 Finland) — "we", "us" — publishes the Atlassian Marketplace app **Undelete - Restore
 Deleted Issues for Jira** ("the app").
 
-This policy explains what the app does with data. It covers the app only. It does not
+This policy explains what the app does with data, and what we do with a support request
+you send us (section 12). It does not
 cover Atlassian's own handling of your Jira site, which is governed by the
 [Atlassian Privacy Policy](https://www.atlassian.com/legal/privacy-policy).
 
@@ -123,7 +124,8 @@ Anything you type there is your own choice, and we use it only to act on your fe
 | Atlassian | Hosts all app compute and storage (Forge) | Per your Atlassian site's data residency |
 | Tally BV | Hosts the optional feedback form only — reached only if you click the link | Belgium; data stored within the EU |
 
-No other party receives data.
+No other party receives data from the app. Support requests are covered separately in
+section 12.
 
 Neither is a sub-processor for the app's core function. Atlassian hosts the app inside
 your own Atlassian environment. Tally receives nothing unless a person at your
@@ -170,12 +172,13 @@ completeness.
 
 ## 10. Your rights
 
-Data subject requests should go to the **controller** — the organisation whose Jira site
-holds the data — not to us. Their administrator can satisfy a right-to-erasure request by
+For data the app holds in your Jira site, data subject requests should go to the
+**controller** — the organisation whose Jira site holds the data — not to us. For a
+support request you sent us, we are the controller; see section 12. Their administrator can satisfy a right-to-erasure request by
 purging the relevant trash items in the app, by shortening retention, or by uninstalling.
 
 If you are a customer administrator and need our help with a request, contact us at the
-address in section 12. Where we act as processor we will assist the controller as
+address in section 13. Where we act as processor we will assist the controller as
 required by Article 28 GDPR.
 
 ## 11. Changes
@@ -184,7 +187,33 @@ We will update this page if the app's data handling changes, and change the "las
 updated" date. Material changes will be notified to customer administrators and to
 Atlassian, as required by the Atlassian Marketplace Partner Agreement.
 
-## 12. Contact
+## 12. Support requests
+
+This section covers a support request you send us. It does not concern data the app
+holds in your Jira site.
+
+**What we receive:** your email address and the headers your email carries, your name
+if you give it, and what you write or attach — typically your Jira site URL, an issue
+key, a description of the problem and a screenshot of an error. For this data we are the
+**data controller**.
+
+**Why:** to answer your request and fix the problem. The legal basis is our
+legitimate interest in supporting the users of the app (GDPR Article 6(1)(f)).
+
+**Where it is kept:** support email arrives in an inbox hosted by **Proton AG**
+(Geneva, Switzerland). Switzerland has an adequacy decision from the European
+Commission.
+
+**How long:** while the request is open, and afterwards for as long as we need it to
+handle follow-up questions about the same problem. Then we delete it.
+
+**Your rights:** you can ask us for a copy of this data, to correct it or to delete it,
+and you can object to its use, by writing to the address in section 13. You can also
+complain to the Finnish Data Protection Ombudsman (tietosuoja.fi).
+
+**Do not send customer data.** Issue keys and error messages are enough to start.
+
+## 13. Contact
 
 Email **[{{ site.privacy_email }}](mailto:{{ site.privacy_email }})** for any question
 about this policy or about data the app holds.

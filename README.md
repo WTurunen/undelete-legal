@@ -12,7 +12,8 @@ source lives elsewhere and stays private.
 |---|---|
 | Privacy policy (mandatory) | `/privacy` |
 | Documentation | `/docs` |
-| Support | `mailto:` the `support_email` in `_config.yml` |
+| Support (App details → Support ticketing system) | `/support` |
+| Support email | the `support_email` in `_config.yml` |
 
 ## Editing
 
@@ -25,7 +26,7 @@ there.
 | Variable | Used by |
 |---|---|
 | `support_email` | the footer on every page, and the landing page |
-| `privacy_email` | `privacy.md` section 12, and both contacts in `dpa.md` |
+| `privacy_email` | `privacy.md` section 13, and both contacts in `dpa.md` |
 | `security_email` | the vulnerability-report line in `security.md` |
 
 They are aliases to one inbox, so the split is about what each document says rather than

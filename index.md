@@ -33,7 +33,8 @@ an external service.
 ## Support
 
 Email <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>. Support is
-offered on a commercially reasonable basis during Finnish business days.
+offered on a commercially reasonable basis during Finnish business days. Hours and what
+to include in a request are on the [support page](support).
 
 ## Get the app
 
